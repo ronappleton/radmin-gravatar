@@ -1,0 +1,34 @@
+{
+  "name": "ronappleton/radmin-gravatar",
+  "description": "Adds gravatar blade directive for use in radmin template",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ron Appleton",
+      "email": "ron.appleton@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "laravel/framework": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "RonAppleton\\Radmin\\Gravatar\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RonAppleton\\Radmin\\Gravatar\\ModuleServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
